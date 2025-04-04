@@ -1,12 +1,12 @@
 services:
-    portfolio-site:
+    node-site:
         build: .
         environment:
             - VIRTUAL_HOST=node.pajordan.com
             - LETSENCRYPT_HOST=node.pajordan.com
         networks:
             - net
-        container_name: node-portfolio
+        container_name: node-site
 networks:
     net:
         external: true

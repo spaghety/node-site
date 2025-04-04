@@ -1,6 +1,4 @@
 services:
-    portfolio-site:
+    node-site:
+        container_name: node-site
         build: .
-        container_name: node-portfolio
-        ports:
-            - "3000:80"
